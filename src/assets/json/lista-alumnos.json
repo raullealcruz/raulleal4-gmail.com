@@ -1,0 +1,8 @@
+[
+  {"id":1, "nombre" :"Raúl Leal", "email":"raullea@gmail.com", "edad" :3},
+  {"id": 2, "nombre": "Gaudiel Garcia", "email": "Gaudiel@gmail.com", "edad" : 21},
+  {"id": 3, "nombre": "Martin Miguel", "email": "Martin@gmail.com", "edad" : 20},
+  {"id": 4, "nombre": "Sheldon Pablos", "email": "Sheldon@gmail.com", "edad" : 19},
+  {"id": 5, "nombre": "La Vane", "email": "vane@gmail.com", "edad" : 25},
+  {"id": 6, "nombre": "Maria", "email": "maria@gmail.com", "edad" : 29}
+]

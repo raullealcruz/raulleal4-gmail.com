@@ -1,0 +1,33 @@
+
+<div *ngIf="alu">
+  <h3> Lista de Alumnos </h3>
+  <ul>
+    <li *ngFor="let lista of alu | async">
+      <a [routerLink]="['/detalles/',lista.id]">
+        <input type="Hidden" value="{{lista._id}} " />
+        {{lista.nombre}} {{lista.codigo}}
+      </a>
+    </li>
+  </ul>
+  </div>
+
+
+<div>
+  <form [formGroup]="alumnoForm" >
+    id: <input type="textarea" name="id" formControlName="id" disabled /><br>
+    Nombre: <input type="text" name="nombre" formControlName="nombre" required/><br>
+    Codigo: <input type="text" name="codigo" formControlName="codigo"  required /><br>
+    <input type="button" value="Consultar" (click)="BuscarAlumno()" />
+    <input type="button" value="Modificar" (click)="modificarAlumno()"/>
+    <input type="button" value="Guardar" (click)="crearAlumno()"/>
+    <input type="button" value="Eliminar" (click)="OnDelete()">
+    <input type="button" value="Lista" (click)="listarAlumnos()">
+  </form>
+  <div>
+    <h1>
+      Buscar es por "NOMBRE" <br>
+      Eliminar es por "CODIGO", <br>
+      GUARDAR, MODIFICAR Y LISTAR ES NORMAL <br>
+    </h1>
+  </div>
+</div>
